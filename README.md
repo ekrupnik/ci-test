@@ -1,1 +1,1 @@
-Hello from Eric! hI Dan and Don!
+This is a sample project.
