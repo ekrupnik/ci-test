@@ -1,6 +1,6 @@
-###############
+#########################
 # Install Java 7u21
-###############
+#########################
 http://www.oracle.com/technetwork/java/javase/downloads/java-archive-downloads-javase7-521261.html#jre-7u21-oth-JPR
 download jre-7u21-linux-x64.rpm (save file)
 
@@ -10,19 +10,19 @@ java -version
 	Java(TM) SE Runtime Environment (build 1.7.0.0_21-b11)
 	Java HotSpot(TM) 64-Bit Server VM (build 23.21-b01, mixed mode)
 
-###############
+#########################
 # Update YUM - this process could take about an hour
-###############
+#########################
 yum update
 
-###############
+#########################
 # Install developer tools - this process could take an hour
-###############
+#########################
 yum groupinstall "Development Tools"
 
-###############
+#########################
 # Install RVM and RVM dependencies
-###############
+#########################
 curl -L https://get.rvm.io | bash -s
 source /usr/local/rvm/scripts/rvm
 
@@ -46,9 +46,9 @@ gem -v
 yum install -y rubygem-nokogiri
 yum install -y gcc ruby-devel libxml2 libxml2-devel libxslt libxslt-devel
 
-###############
+#########################
 # Install gems
-###############
+#########################
 gem install foodcritic
 gem install strainer
 gem install bundler
@@ -65,9 +65,9 @@ gem isntall net-ssh -v=2.2.2
 gem install mixlib-cli -v=1.2.2
 gem install test-kitchen
 
-################
+###########################
 # Configure knife
-#################
+###########################
 
 ~/.chef/knife.rb
 log_level                :info
@@ -82,9 +82,9 @@ cookbook_path            '/RUP/workspaces/general/ccc-org.cookbook/cookbooks'
 
 
 
-##############
+########################
 # VirtualBox
-##############
+########################
 
 http://www.if-not-true-then-false.com/2010/install-virtualbox-with-yum-on-fedora-centos-red-hat-rhel/comment-page-3/
 
@@ -94,9 +94,9 @@ wget http://download.virtualbox.org/virtualbox/rpm/rhel/virtualbox.repo
 yum install VirtualBox-4.1
 
 
-##############
+########################
 # Vagrant 
-##############
+########################
 
 http://downloads.vagrantup.com/tags/v1.2.2
 vagrant_1.2.2_x86_64.rpm
@@ -117,9 +117,9 @@ CentOS 6.4 x86_64 Minimal (VirtualBox Guest Additions 4.2.12, Chef 11.4.4, Puppe
 http://developer.nrel.gov/downloads/vagrant-boxes/CentOS-6.4-i386-v20130427.box
 
 
-##############
+#####################################
 # Add RUP directories and workspaces
-##############
+#####################################
 
 mkdir /RUP
 mkdir /RUP/workspaces
@@ -134,28 +134,29 @@ vagrant up
 vagrant ssh
 
 
-###############
+#########################
 # Install eclipse
-###############
+#########################
 yum install eclipse
 
 
-###############
+#########################
 # Install Git/gitbash
-###############
+#########################
 yum install git
 	git version
 
 	
-###############
+#########################
 # Install Jenkins
-###############
+#########################
 wget -O /etc/yum.repos.d/jenkins.repo http://pkg.jenkins-ci.org/redhat/jenkins.repo
 rpm --import http://pkg.jenkins-ci.org/redhat/jenkins-ci.org.key
 yum install jenkins
 service jenkins start
 
-###############
+#########################
 # Run Jenkins
-###############
+#########################
 Point a web browser to: localhost:8080
+
