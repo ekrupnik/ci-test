@@ -2,3 +2,4 @@ Chef: providers and resources
 http://support.rightscale.com/12-Guides/Chef_Cookbooks_Developer_Guide/04-Developer/06-Development_Resources/Lightweight_Resources_and_Providers_(LWRP)
 http://wiki.opscode.com/display/chef/Lightweight+Resources+and+Providers+%28LWRP%29
 http://docs.opscode.com/chef/lwrps_custom.html
+http://www.slideshare.net/geekbri/lwrp-presentation
