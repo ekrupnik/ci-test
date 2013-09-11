@@ -6,5 +6,9 @@ http://www.slideshare.net/geekbri/lwrp-presentation
 
 Chef best practices:
 http://www.prashantrajan.com/posts/2013/06/leveling-up-chef-best-practices/
+
 Foodfight show:
 http://foodfightshow.org/
+
+Knife plugins:
+http://docs.opscode.com/community_plugin_knife.html
