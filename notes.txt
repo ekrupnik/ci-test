@@ -17,5 +17,6 @@ Knife plugins:
 http://docs.opscode.com/community_plugin_knife.html
 
 Packer vs VeeWee for Amazon AMI
-
+Can VeeWee make AMI
 Vagrant with Amazon
+
