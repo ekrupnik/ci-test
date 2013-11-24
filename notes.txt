@@ -15,6 +15,3 @@ http://foodfightshow.org/
 
 Knife plugins:
 http://docs.opscode.com/community_plugin_knife.html
-
-Chef installing gems...?
-what should be in packer template vs chefed
