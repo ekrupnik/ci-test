@@ -19,5 +19,5 @@ http://docs.opscode.com/community_plugin_knife.html
 Data bags:
 https://wiki.opscode.com/display/ChefCN/Data+Bags
 http://gettingstartedwithchef.com/more-than-one-website.html
-brk ADDED LINE IN A CAPTIAL CASE
+BRK ADDED LINE IN A CAPTIAL CASE
 brk added a second line
