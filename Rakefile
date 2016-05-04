@@ -44,7 +44,11 @@ end
 desc 'Run all static analysis'
 task :static_analysis do
   print_header("Running task: static_analysis")
-  sh 'tailor'
+  sh 'tailor' do |success, failure|
+    if !success
+      fail_with_message("Tailor failed!")
+    end
+  end
 end
 
 desc 'Run unit tests'
@@ -82,4 +86,9 @@ end
 def print_warning(message=nil)
   puts message.yellow
   puts "\n"
+end
+
+def fail_with_message(message=nil)
+  puts "#\n# #{message}\n#".red.bold
+  exit 1
 end
