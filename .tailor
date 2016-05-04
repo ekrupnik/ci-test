@@ -135,4 +135,7 @@ Tailor.config do |config|
     style.spaces_in_empty_braces 0, level: :error
     style.trailing_newlines 1, level: :error
   end
+ 
+
 end
+

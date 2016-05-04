@@ -1,5 +1,4 @@
-a = [4, 6,7     , 5]
-
+a = [4, 6, 7, 5]
 puts a.length
 a.sort
 a.sort.reverse
