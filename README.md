@@ -1,4 +1,3 @@
-some change
 Basic Commands
 ==============
     cd someproject
