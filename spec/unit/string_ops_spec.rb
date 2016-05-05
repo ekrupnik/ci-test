@@ -21,4 +21,12 @@ describe StringOps do
       expect(string_ops.to_lower(input_string)).to eq(expected_string)
     end
   end
+
+  describe "#to_empty" do
+    it "returns empty string" do
+      expected_string = ""
+      expect(string_ops.to_empty(input_string)).to eq(expected_string)
+    end
+  end
+
 end
