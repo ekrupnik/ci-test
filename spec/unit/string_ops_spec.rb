@@ -36,5 +36,18 @@ describe StringOps do
       expect(string_ops.reverse(input_string)).to eq(expected_string)
     end
   end
+  describe "#to_eric" do
+    it "returns Eric" do
+      expected_string = "Eric"
+      expect(string_ops.to_lower(input_string)).to eq(expected_string)
+    end
+  end
+
+  describe "#to_larry" do
+    it "returns Larry" do
+      expected_string = "Larry"
+      expect(string_ops.to_lower(input_string)).to eq(expected_string)
+    end
+  end
 
 end
