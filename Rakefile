@@ -25,6 +25,11 @@ task :clean do
     puts "Removed previous build: demo.war..."
     `rm demo.war`
   end
+  if FileTest.exists?('coverage/rcov/index.html')
+    puts "Removed coverage dir..."
+    `rm coverage/rcov/index.html`
+  end
+
   print_success("Your workspace is clean")
 end
 
