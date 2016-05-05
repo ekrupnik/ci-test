@@ -14,4 +14,8 @@ class StringOps
   def to_empty(string)
     ""
   end
+
+  def to_eric(string)
+    "Eric"
+  end
 end
