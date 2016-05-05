@@ -1,9 +1,6 @@
 require 'colored'
 require 'rspec/core/rake_task'
 
-require 'ci/reporter/rake/rspec'
-
-
 task :default => [:print_help]
 
 task :print_help do
@@ -15,9 +12,6 @@ task :build => [:clean, :compile, :test, :rspec]
 
 desc 'Run all tests and static analysis'
 task :test => [:static_analysis, :unit_test, :integration_test, :rspec]
-
-# No desc because I don't want people calling this independent of running other tests
-task :rspec => 'ci:setup:rspec'
 
 desc 'Clean workspace and logs'
 task :clean do
