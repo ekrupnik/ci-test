@@ -50,7 +50,7 @@ end
 desc 'Run unit tests'
 task :unit_test do
   print_header("Running task: unit_test")
-  sh '/usr/local/bin/rspec -c spec/unit/*_spec.rb --deprecation-out rspec.log'
+  sh '/usr/local/bin/rspec -c spec/unit/*_spec.rb --deprecation-out rspec.log --format documentation'
 end
 
 desc 'Run all integration tests'
