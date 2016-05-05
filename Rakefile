@@ -80,11 +80,11 @@ def print_success(message=nil)
 end
 
 def print_warning(message=nil)
-  puts message.yellow.bold
+  puts "#\n# [WARNING] #{message}\n#".yellow.bold
   puts "\n"
 end
 
 def fail_with_message(message=nil)
-  puts "#\n# #{message}\n#".red.bold
+  puts "#\n# [ERROR] #{message}\n#".red.bold
   exit 1
 end
