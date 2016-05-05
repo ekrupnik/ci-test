@@ -18,4 +18,9 @@ class StringOps
   def to_eric(string)
     "Eric"
   end
+
+  def to_larry(string)
+    "Larry"
+  end
+
 end
