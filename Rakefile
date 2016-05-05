@@ -44,11 +44,7 @@ end
 desc 'Run all static analysis'
 task :static_analysis do
   print_header("Running task: static_analysis")
-  sh %{tailor} do |ok, res|
-    if ! ok
-      fail_with_message("Tailor failed!")
-    end
-  end
+  sh "tailor"
 end
 
 desc 'Run unit tests'
@@ -68,7 +64,6 @@ task :tailor do
   print_header("Running task: tailor")
   sh 'tailor'
 end
-
 
 
 private
