@@ -8,10 +8,10 @@ task :print_help do
 end
 
 desc 'Run a full clean build and full tests'
-task :build => [:clean, :compile, :test, :rspec]
+task :build => [:clean, :compile, :test]
 
 desc 'Run all tests and static analysis'
-task :test => [:static_analysis, :unit_test, :integration_test, :rspec]
+task :test => [:static_analysis, :unit_test, :integration_test]
 
 desc 'Clean workspace and logs'
 task :clean do
