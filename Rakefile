@@ -44,7 +44,7 @@ end
 desc 'Run all static analysis'
 task :static_analysis do
   print_header("Running task: static_analysis")
-  sh "tailor"
+  sh "/usr/local/bin/tailor -c ./.tailor"
 end
 
 desc 'Run unit tests'
@@ -62,7 +62,7 @@ end
 desc 'Run tailor'
 task :tailor do
   print_header("Running task: tailor")
-  sh 'tailor'
+  sh "/usr/local/bin/tailor -c ./.tailor"
 end
 
 
