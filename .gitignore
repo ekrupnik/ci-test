@@ -1,3 +1,4 @@
 .project
 demo.war
 rspec.log
+coverage/
