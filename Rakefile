@@ -37,6 +37,7 @@ task :compile do
     print "."
     sleep 1 # second
   end
+  puts "\n\n"
   `touch demo.war`
   print_success "\nGenerated demo.war"
 end
@@ -56,7 +57,7 @@ end
 desc 'Run all integration tests'
 task :integration_test do
   print_header("Running task: integration_test")
-  print_warning "No integration tests found in test/integ. Please add them."
+  print_warning("No integration tests found in test/integ. Please add them.")
 end
 
 desc 'Run tailor'
@@ -79,7 +80,7 @@ def print_success(message=nil)
 end
 
 def print_warning(message=nil)
-  puts message.yellow
+  puts message.yellow.bold
   puts "\n"
 end
 
