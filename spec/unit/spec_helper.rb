@@ -2,6 +2,11 @@ require_relative '../../string_ops'
 
 require 'spec_helper'
 
+require 'simplecov'
+require 'simplecov-rcov'
+SimpleCov.formatter = SimpleCov::Formatter::RcovFormatter
+SimpleCov.start
+
 describe StringOps do
   string_ops = StringOps.new
   input_string = "To see a World in a Grain of Sand, And a Heaven in a Wild Flower, Hold Infinity in the palm of your hand, And Eternity in an hour."

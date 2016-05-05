@@ -1,4 +1,8 @@
 require_relative '../../ruby_samples/string_ops.rb'
+require 'simplecov'
+require 'simplecov-rcov'
+SimpleCov.formatter = SimpleCov::Formatter::RcovFormatter
+SimpleCov.start
 
 #require 'spec_helper'
 
