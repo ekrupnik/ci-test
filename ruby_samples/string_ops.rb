@@ -7,6 +7,10 @@ class StringOps
     string.downcase
   end
 
+  def reverse(string)
+    string.reverse
+  end
+
   def to_empty(string)
     ""
   end
