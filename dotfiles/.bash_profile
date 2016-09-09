@@ -27,6 +27,9 @@ alias push="git push origin master"
 #
 alias cdworkspace="cd ~/development/workspaces"
 
+# Cleanup and Maint.
+alias cleandocker"docker rm $(docker ps -q -f status=exited) ; docker rmi $(docker images | grep "<none>" | awk '{print $3}')"
+
 #
 # SSH-ing
 #
