@@ -1,4 +1,4 @@
 hi there
-eric
+Eric
 testing file
 Jenkins test
