@@ -1,0 +1,28 @@
+[alias]
+graph = log --graph --abbrev-commit --decorate --format=format:'%C(dim cyan)%h%C(reset) - %C(green)(%ar)%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)%C(yellow)%d%C(reset)' --all
+timeline = log --graph --abbrev-commit --decorate --format=format:'%C(blue)%h%C(reset) - %C(cyan)%aD%C(reset) %C(green)(%ar)%C(reset)%C(yellow)%d%C(reset)%n''          %C(white)%s%C(reset) %C(dim white)- %an%C(reset)' --all
+
+lg = log --pretty=format:\"%C(auto)%h %C(bold)%s%C(auto) %d%n%an <%cd>%n\"
+
+browse = "!f() { open -a '/Applications/Google Chrome.app' \"$( git config --get remote.origin.url | sed -e 's,:,/,' -e 's,^git@,https://,' -e 's,.git$,,' )\"; }; f"
+
+
+[user]
+	name = Eric Krupnik
+	email = ekrupnik@getwellnetwork.com
+	signingkey = /Users/ekrupnik/.ssh/gitlab_signing_ssh_key
+[color]
+ui = true
+[commit]
+	gpgsign = true
+	template = /Users/ekrupnik/.stCommitMsg
+[gpg]
+	format = ssh
+[core]
+	excludesfile = /Users/ekrupnik/.gitignore_global
+[difftool "sourcetree"]
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path = 
+[mergetool "sourcetree"]
+	cmd = /Applications/Sourcetree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true
